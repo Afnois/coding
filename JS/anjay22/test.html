@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaSript 3</title>
+    <style>
+        /* Make the body full height and remove default margins */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container to hold all content and center it */
+        .container {
+            text-align: center;
+        }
+
+        /* Styling buttons */
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Latihan JavaSript 3</h1>
+        <button onclick="ubahData()">Ubah Data</button>
+        <button onclick="cekData()">Cek Data</button>
+    </div>
+
+    <script>
+        function ubahData() {
+            document.getElementById('data1').innerHTML = " Data Baru";
+            alert("Data Telah Diubah")
+        }
+
+        function cekData() {
+            var data = document.getElementById('data1').innerHTML;
+            alert(data);
+        }
+    </script>
+</body>
+</html>

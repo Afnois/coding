@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaSript 4</title>
+</head>
+<body>
+    <h1 id = "x"> Latihan JavaSript 4</h1>
+
+    <script>
+        var a, b, c;
+        a=15;
+        b=5;
+        c= a + b;
+        alert(c);
+        console.log(c);
+        document.getElementById("x").innerHTML=c;
+
+        var alas = prompt("Masukan alas Segitiga : ");
+        var tinggi= prompt("Masukan tinggi Segitiga : ");
+        var totalLuas = 0.5 * alas * tinggi;
+        console.log("Total luas segitiga = " + totalLuas)
+
+        var phi =3.14;
+        var r = prompt("Masukan jari jari lingkaran : ");
+        var total = phi * r * r;
+        console.log("Total luas lingkaran = " + total)
+    </script>
+</body>
+</html>
